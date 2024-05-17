@@ -1,5 +1,5 @@
 {
-  "name": "compiler-test",
+  "name": "react-compiler-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "@babel/preset-typescript": "^7.24.1",
+    "next": "^14.3.0-canary.0",
+    "react": "19.0.0-beta-04b058868c-20240508",
+    "react-dom": "19.0.0-beta-04b058868c-20240508"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@babel/plugin-proposal-do-expressions": "^7.24.1",
+    "@babel/preset-react": "^7.24.1",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "npm:types-react@beta",
+    "@types/react-dom": "npm:types-react-dom@beta",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-c23de8d-20240515",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.3.0-canary.0",
+    "eslint-plugin-react-compiler": "^0.0.0-experimental-53bb89e-20240515",
+    "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@beta",
+    "@types/react-dom": "npm:types-react-dom@beta"
   }
 }
